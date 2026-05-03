@@ -6,11 +6,11 @@
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![OpenRouter](https://img.shields.io/badge/LLM-OpenRouter%20Qwen-orange.svg)](https://openrouter.ai/)
 
-**Knowledge Scanner** — это Python-скрипт, который сканирует историю диалогов Cline (VS Code расширение), очищает их от технического шума (environment_details, tool XML, system blocks и т.д.) и через дешёвую LLM (Qwen 2.5 7B) создаёт структурированные wiki-статьи.
+**Knowledge Scanner** — это Python-скрипт, который сканирует все папки задач Cline (VS Code расширение), читает из каждой `api_conversation_history.json`, очищает от технического шума (environment_details, tool XML, system blocks и т.д.) и через дешёвую LLM (Qwen 2.5 7B) создаёт структурированные wiki-статьи.
 
 ## ✨ Возможности
 
-- 🔍 **Сканирует** `api_conversation_history.json` из задач Cline
+- 🔍 **Сканирует** папки задач Cline (`%APPDATA%\...\tasks\`) и читает `api_conversation_history.json` из каждой
 - 🧹 **Чистит** от служебного шума (~64% сокращение объёма)
 - 🤖 **Суммаризирует** через Qwen 2.5 7B (OpenRouter) — ~$0.002 за задачу
 - 📝 **Создаёт** markdown-статьи с YAML frontmatter, тегами и wikilinks
@@ -31,7 +31,7 @@
 
 ```bash
 # Клонировать
-git clone https://github.com/YOUR_USERNAME/cline-knowledge-scanner.git
+git clone https://github.com/garipps/cline-knowledge-scanner.git
 cd cline-knowledge-scanner
 
 # Зависимости
