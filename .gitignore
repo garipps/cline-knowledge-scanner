@@ -1,0 +1,28 @@
+# Logs
+scanner.log
+*.log
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Processed markers
+.done
+
+# API keys
+.openrouter_key
+API_KEY.txt
+api_keys.txt
+
+# Environment
+.env
+.env.local
+
+# OS
+Thumbs.db
+Desktop.ini
+
+# IDE
+.vscode/
+.idea/
