@@ -28,8 +28,8 @@
 git clone https://github.com/garipps/cline-knowledge-scanner.git
 cd cline-knowledge-scanner
 
-# Зависимости
-pip install requests
+# Зависимости (только requests)
+pip install -r requirements.txt
 ```
 
 ### 2. Настройка API ключа
